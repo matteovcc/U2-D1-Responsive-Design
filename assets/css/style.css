@@ -190,12 +190,15 @@ footer a {
 
 /*Medium */
 
-@media screen and (max-width:768px){
+@media screen and (min-width:577px) and (max-width:768px){
     header nav li{
         display:inline-block;
     }
     table {
         margin-inline:auto;
+    }
+    article h2{
+        font-weight: bold;
     }
 }
 
@@ -204,7 +207,10 @@ footer a {
 @media screen and (min-width: 769px){
     body{
         line-height: 3rem;
+        font-size: 16px;
     }
+    
+   
     article ul li{
         margin-bottom: 4px;
     }
@@ -216,6 +222,10 @@ footer a {
         margin-inline:auto;
         margin-bottom:60px;
         margin-top:60px;
+    }
+
+    article h2{
+        font-weight: bold;
     }
  
     article iframe, article section{
@@ -245,6 +255,13 @@ footer a {
         margin-inline:-3px;
     }
 
-        
-    
+}
+
+@media print {
+    body{
+    background-image:none;
+    }
+    header, article iframe,article section, aside,footer{
+        display:none;
+    }
 }
