@@ -209,7 +209,25 @@ footer a {
         line-height: 3rem;
         font-size: 16px;
     }
-    
+    header{
+        text-align:left;
+        height: 18vh;
+    }
+    header div{
+        display:inline-block;
+        width: 49%;
+    }
+    header div p, header nav li{
+        display: inline-block;
+    }
+    header nav{
+        display: inline-block;
+        text-align: right;
+        width:49%
+    }
+    header div img{
+        vertical-align: middle;
+    }
    
     article ul li{
         margin-bottom: 4px;
